@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/catFragment">
+
+    <fragment
+        android:id="@+id/catFragment"
+        android:name="com.example.dz14month.dz14month.ui.fragments.CatFragment"
+        android:label="fragment_cat"
+        tools:layout="@layout/fragment_cat" >
+        <action
+            android:id="@+id/action_catFragment_to_detailCatFragment"
+            app:destination="@id/detailCatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cinemaFragment"
+        android:name="com.example.dz14month.dz14month.ui.fragments.CinemaFragment"
+        android:label="fragment_cinema"
+        tools:layout="@layout/fragment_cinema" />
+    <fragment
+        android:id="@+id/detailCatFragment"
+        android:name="com.example.dz14month.dz14month.ui.detailFragments.DetailCatFragment"
+        android:label="fragment_detail_cat"
+        tools:layout="@layout/fragment_detail_cat" >
+        <argument
+            android:name="text"
+            app:argType="string"
+            android:defaultValue=""/>
+        <argument
+            android:name="image"
+            app:argType="string"
+            android:defaultValue=""/>
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="com.example.dz14month.dz14month.ui.fragments.LanguageFragment"
+        android:label="fragment_language"
+        tools:layout="@layout/fragment_language" />
+</navigation>

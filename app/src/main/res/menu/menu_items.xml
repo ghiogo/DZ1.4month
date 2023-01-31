@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/catFragment"
+        android:icon="@drawable/cat"
+        android:title="Cat" />
+
+    <item
+        android:id="@+id/cinemaFragment"
+        android:icon="@drawable/cinema"
+        android:title="Cinema"/>
+    <item
+        android:id="@+id/languageFragment"
+        android:icon="@drawable/language"
+        android:title="Language"/>
+
+
+</menu>
